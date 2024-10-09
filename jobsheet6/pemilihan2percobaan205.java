@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pemilihan2percobaan205 {
+ n        public class pemilihan2percobaan205 {
 
     public static void main(String[] args) {
         
@@ -8,7 +8,7 @@ public class pemilihan2percobaan205 {
         int pilihan_menu;
         String member, pembayaran;
         double total_bayar, harga = 0, diskon = 0;
-        int potonganQRIS = 1000; 
+        int potonganQRIS = 1000;  
 
         System.out.println("----------------------------------------");
         System.out.println("============ MENU KAFE JTI =============");

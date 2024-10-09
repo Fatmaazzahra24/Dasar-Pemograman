@@ -4,7 +4,7 @@ public class pemilihan2percobaan305 {
 
     public static void main(String[] args) {
         Scanner input05 = new Scanner(System.in);
-
+  
         String kategori;
         int penghasilan , gaji_bersih ;
         double pajak = 0 ;
@@ -15,7 +15,7 @@ public class pemilihan2percobaan305 {
         penghasilan = input05.nextInt();
 
         //pengecekan kondisi bersarang
-        if (kategori.equalsIgnoreCase("pekerja")) {
+        if (kategori.equals("pekerja")) {
             if (penghasilan <= 2000000) 
                     pajak = 0.1;
                     
@@ -27,7 +27,7 @@ public class pemilihan2percobaan305 {
                 System.out.println("penghasilan bersih : " + gaji_bersih);
             
             
-        } else if (kategori.equalsIgnoreCase("pebisnis")) {
+        } else if (kategori.equals("pebisnis")) {
             if (penghasilan <= 2500000 ) 
                 pajak = 0.15;    
             
@@ -39,7 +39,7 @@ public class pemilihan2percobaan305 {
                 gaji_bersih = (int) (penghasilan - (pajak * penghasilan ));
                 System.out.println("penghasilan bersih : " + gaji_bersih);
         }else 
-            System.out.println("masukkan kategori salah ");
+            System.out.println(" kategori salah ");
 
     }
 }

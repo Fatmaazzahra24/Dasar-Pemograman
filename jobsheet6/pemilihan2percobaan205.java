@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
- n        public class pemilihan2percobaan205 {
+public class pemilihan2percobaan205 {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
         Scanner input05 = new Scanner(System.in);
@@ -21,7 +24,7 @@ import java.util.Scanner;
         pilihan_menu = input05.nextInt();
         input05.nextLine();  
 
-        System.out.print("Apakah anda punya member (y/n)?: ");
+        System.out.print("Apakah anda punya member (y/n)?: /n" + " haloparagraf");
         member = input05.nextLine();
 
         System.out.print("Apakah pembayaran menggunakan QRIS (y/n)?: ");
@@ -41,6 +44,7 @@ import java.util.Scanner;
         } else {
             System.out.println("Pilihan menu tidak valid, silakan masukkan pilihan yang benar.");
             return;  
+        }
 
         // Mengecek apakah pembeli memiliki member
         if (member.equalsIgnoreCase("y")) {

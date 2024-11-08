@@ -8,7 +8,7 @@ public class star05 {
     int N = fatma.nextInt();
 
     for (int i =1; i<=N;i++) {
-       System.out.print("*"); 
+       System.out.println("*"); 
     }
     }
     

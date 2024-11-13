@@ -17,11 +17,12 @@ public class tugas2 {
             cabang_olahraga = " Voly";
         } 
         System.out.print("masukkan jenis  cabang olahraga (Badminton, Tenis meja, Basket, Voly ) =" );
-        cabang_olahraga=fatma.nextLine();
+        cabang_olahraga=fatma.nextLine(); 
+        daftaratlet="";
 
         System.out.println("masukkan nama 5 atlet untuk cabang olahraga  " +cabang_olahraga);
         for ( j = 1; j <=5 ;j++) {
-            System.out.print("nama atlet ke-" +j + ":");
+            System.out.print("nama atlet ke-" + j + ":");
             nama_atlet=fatma.nextLine();
             daftaratlet += j + "." +nama_atlet + "\n";
             

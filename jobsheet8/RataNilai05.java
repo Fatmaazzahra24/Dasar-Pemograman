@@ -15,7 +15,7 @@ public class RataNilai05 {
             TotalNilai += nilai;
         }
         RataNilai=TotalNilai/5;
-        System.out.print("rata rata nilai mahasiswa ke "+i+" adalah = "+RataNilai);
+        System.out.println("rata rata nilai mahasiswa ke "+i+" adalah = "+RataNilai);
         i++;
     }
 

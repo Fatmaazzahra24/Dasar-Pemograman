@@ -11,8 +11,12 @@ public class ArrayNilai05 {
         NilaiAkhir[i]=fatma.nextInt();
     }
 
-    for (int i = 0; i < 10; i++) {
-        System.out.println("nilai akhir ke-"+i+ " adalah = " +NilaiAkhir[i]);
+    for (int i = 0; i < NilaiAkhir.length; i++) {
+        if (NilaiAkhir[i] >70 ) {
+            System.out.println("Mahasiswa ke-" + i + "lulus!");
+        }else {
+            System.out.println("Mahasiswa ke-" + i +"tidak lulus");
+        }
     }
     
 

@@ -8,7 +8,7 @@ public class ArrayRataNilai05 {
     System.out.print("masukkan jumlah  mahasiswa : ");
     int JmlMhs = fatma.nextInt();
 
-    int [] NilaiMhs = new  int [JmlMhs];  
+    int [] NilaiMhs = new  int [JmlMhs];
     int Mhslulus =0 , Mhstidaklolos=0;
     double totallulus=0, totaltidaklulus=0 ;
 

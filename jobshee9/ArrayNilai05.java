@@ -6,7 +6,7 @@ public class ArrayNilai05 {
     Scanner fatma=new Scanner(System.in);
     
     int [] NilaiAkhir = new int[10];
-    for (int i=0; i<10;i++) {
+    for (int i=0; i<NilaiAkhir.length;i++) {
         System.out.print("masukkan nilai akhirke-"+i+" : ");
         NilaiAkhir[i]=fatma.nextInt();
     }

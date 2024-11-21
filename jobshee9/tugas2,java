@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Tugas3 {
+    public static void main(String[] args) {
+    Scanner fatma = new Scanner(System.in);
+
+    System.out.println("==========SELAMAT DATANG DI CAFE FATMA=========");
+    System.out.print("Silahkan masukkan jumlah pesanan : ");
+    int Jumlahpesanan = fatma.nextInt();  
+    fatma.nextLine();
+
+    String [] namapesanan = new String[Jumlahpesanan];
+    double [] hargapesanan = new double[Jumlahpesanan];
+    double totalharga = 0;
+
+    for (int i = 0; i < Jumlahpesanan; i++) {
+        System.out.print("Masukkan nama pesanan ke-"+ (i+1) + " : ");  
+        namapesanan[i] = fatma.nextLine();
+        System.out.print("Masukkan harga untuk " + namapesanan[i] + " : ");
+        hargapesanan[i] = fatma.nextDouble();
+        fatma.nextLine();
+        totalharga += hargapesanan[i];
+    }
+    System.out.println("\n========== DAFTAR PESANAN ==========");
+    for (int i = 0; i < Jumlahpesanan; i++) {
+        System.out.println((i + 1) + ". " + namapesanan[i] + " - Rp " + hargapesanan[i]);
+    }
+    System.out.println("Total Harga yang harus dibayar : Rp " + totalharga);
+    }
+}

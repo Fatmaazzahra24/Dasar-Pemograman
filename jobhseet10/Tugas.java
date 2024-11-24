@@ -15,16 +15,7 @@ public class Tugas {
         }
 
 
-        System.out.println("\nHasil survei:");
-        for (int i = 0; i < 10; i++) {
-            System.out.print("Responden " + (i + 1) + ": ");
-            for (int j = 0; j < 6; j++) {
-                System.out.print(survey[i][j] + " ");
-            }
-            System.out.println();
-        }
-
-        System.out.println("\nRata-rata setiap responden:");
+        System.out.println("Rata-rata setiap responden:");
         for (int i = 0; i < 10; i++) {
             double total = 0;
             for (int j = 0; j < 6; j++) {
@@ -34,7 +25,7 @@ public class Tugas {
             System.out.println("Responden " + (i + 1) + ": " + rataRata);
         }
 
-        System.out.println("\nRata-rata setiap pertanyaan:");
+        System.out.println("Rata-rata setiap pertanyaan:");
         for (int j = 0; j < 6; j++) {
             double total = 0;
             for (int i = 0; i < 10; i++) {
@@ -44,8 +35,6 @@ public class Tugas {
             System.out.println("Pertanyaan " + (j + 1) + ": " + rataRata);
         }
         
-
-        System.out.println("\nRata-rata keseluruhan:");
         double totalKeseluruhan = 0;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 6; j++) {
@@ -54,9 +43,6 @@ public class Tugas {
         }
         double rataRataKeseluruhan = totalKeseluruhan / (10 * 6);
         System.out.println("Rata-rata keseluruhan: " + rataRataKeseluruhan);
-
-
-        scanner.close();
     }
 }
 

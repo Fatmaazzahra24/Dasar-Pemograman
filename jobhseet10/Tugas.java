@@ -4,9 +4,9 @@ public class Tugas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int[][] survey = new int[10][6]; 
+        int[][] survey = { {1,2}, {2,3,4}, {6,5}}; 
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < survey.length; i++) {
             System.out.println("Masukkan jawaban untuk responden " + (i + 1) + ":");
             for (int j = 0; j < 6; j++) {
                 System.out.print("Pertanyaan " + (j + 1) + " (1-5): ");
